@@ -1,0 +1,108 @@
+<div class="section_container lounge_container">
+        <div class="lounge_image">
+            <img src="../IMAGES/inside_aiplane1.jpg" alt="">
+            <img src="../IMAGES/inside_aiplane1.jpg" alt="">
+        </div>
+
+        <div class="lounge_content">
+            <h2 class="section_header">
+                Unaccompanied Minor Lounge
+            </h2>
+
+            <div class="lounge_grids">
+                <div class="lounge_details">
+                    <h4>Experience Tranquility</h4>
+                    <p>
+                        serenity haven offers a tranquil escape,featuring comfortable seating
+                        calming ambiance and attentive service
+                    </p>
+                </div>
+
+                <div class="lounge_details">
+                    <h4>Elevate Your Experience</h4>
+                    <p>
+                        Designed for discerning travellers this exclusive lounge offerspremium amenities assistance and private workspaces
+                    </p>
+                </div>
+
+                <div class="lounge_details">
+                    <h4>Welcoming Space</h4>
+                    <p>
+                        Creating a family friendly atmosphere the family zone is th perfect haven for 
+                        parents and children
+                    </p>
+                </div>
+
+                <div class="lounge_details">
+                    <h4>A Culinary Delight</h4>
+                    <p>
+                        immerse yorself in a world of flavours offering international cuisines gourmet
+                        dishes and carefully curated beverages
+                    </p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    .lounge_container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        
+    }
+    
+    .lounge_grid {
+        display: grid;
+        margin-top: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+    }
+    
+    .lounge_image {
+        position:relative;
+    }
+    
+    .lounge_image img {
+        position:relative ;
+        top: 50%;
+        left: 50%;
+        border-radius: 80px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        margin-top: 300px;
+    }
+    
+    .lounge_image img:nth-child(1) {
+        max-width: 250px;
+        transform: translate(calc(-50% - 9rem), calc(-50% + 5rem));
+        z-index: 3;
+    }
+    
+    .lounge_image img:nth-child(2) {
+        max-width: 250px;
+        transform: translate(calc(-40% - 9), calc(-100% + 5rem));
+        z-index: 4;
+        bottom: 400px;
+        left: 60px;
+        
+    }
+    
+    .lounge_content {
+        margin-top: 350px;
+        display: grid;
+        
+    }
+    
+    .lounge-details h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+    
+    .lounge_image p {
+    
+    }
+    
